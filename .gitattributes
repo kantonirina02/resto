@@ -1,0 +1,21 @@
+# Normaliser les fins de ligne en LF pour tous les fichiers texte
+* text=auto eol=lf
+
+# Fichiers spécifiques à Node.js
+*.js text eol=lf
+*.ts text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Fichiers binaires (ne pas modifier les fins de ligne)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+
+# Empêcher les conflits sur package-lock.json
+package-lock.json merge=union
