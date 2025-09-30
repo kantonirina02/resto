@@ -85,5 +85,9 @@ function showAndHideElementsForRoles(){
     })
 }
 
-// Appel au chargement de la page
-document.addEventListener("DOMContentLoaded", showAndHideElementsForRoles);
+// Appel au chargement de la page avec gestion du loader
+document.addEventListener("DOMContentLoaded", () => {
+    showAndHideElementsForRoles();
+    const loader = document.getElementById("loader");
+    if(loader) loader.style.display = "none";
+});
